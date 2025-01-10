@@ -1,0 +1,1 @@
+<nav class="sb-sidenav-menu-nested nav">    <a class="nav-link" href="upload_images.php">Upload Images</a>    <a class="nav-link" href="events.php">Events</a>    <a class="nav-link" href="touristSpot.php">Tourist Attraction</a>    <a class="nav-link" href="municipality.php">Municipality</a></nav>
