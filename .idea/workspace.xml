@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="" />
+    <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/JQUERY/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/authController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/auth.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,14 +24,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/includes/adminNav.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/index.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/JQUERY/Auth.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/events.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/municipality.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/tourist.js" root0="SKIP_INSPECTION" />
@@ -46,7 +57,8 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;L:/Downloads/TouristDestanationIfoHub&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/capstone(erwin)&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -103,7 +115,9 @@
       <workItem from="1736468321801" duration="768000" />
       <workItem from="1736504127757" duration="614000" />
       <workItem from="1736505979738" duration="626000" />
-      <workItem from="1736508531501" duration="19205000" />
+      <workItem from="1736508531501" duration="19513000" />
+      <workItem from="1736555701283" duration="8681000" />
+      <workItem from="1736599936411" duration="11769000" />
     </task>
     <servers />
   </component>
