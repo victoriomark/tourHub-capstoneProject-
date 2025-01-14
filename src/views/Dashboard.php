@@ -123,6 +123,7 @@
                                 <table id="datatablesSimple">
                                     <thead>
                                         <tr>
+                                            <th>#</th>
                                             <th>First Name</th>
                                             <th>Last Name</th>
                                             <th>User Name</th>
@@ -132,36 +133,11 @@
                                             <th>Contact Person</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>User Name</th>
-                                            <th>Email</th>
-                                            <th>Address</th>
-                                            <th>Phone Number</th>
-                                            <th>Contact Person</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
-                                    <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>Nixon</td>
-                                        <td>tiger.nixon</td>
-                                        <td>tiger.nixon@example.com</td>
-                                        <td>1234 Main St, Edinburgh</td>
-                                        <td>+1-234-567-890</td>
-                                        <td>John Doe</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garrett Winters</td>
-                                        <td>Winters</td>
-                                        <td>garrett.winters</td>
-                                        <td>garrett.winters@example.com</td>
-                                        <td>5678 Elm St, Tokyo</td>
-                                        <td>+1-987-654-321</td>
-                                        <td>Jane Smith</td>
-                                    </tr>
+                                    <?php
+                                    include '../controllers/authController.php';
+                                    \controllers\authController::showUserList();
+                                    ?>
                                     </tbody>
                                 </table>
                             </div>

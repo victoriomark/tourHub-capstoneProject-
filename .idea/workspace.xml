@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/JQUERY/Auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/authController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/userLogout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/festival.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JQUERY/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JQUERY/tourist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/tourist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/authController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/municipalityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/municipalityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/touristController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/touristController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/municipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/municipality.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/touristSpot.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/touristSpot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/showTouristSpotBaseOnMunicipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/showTouristSpotBaseOnMunicipality.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/touristSpot.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/touristSpot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/tables.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +55,7 @@
     <setting file="file://$PROJECT_DIR$/src/JQUERY/tourist.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/uploadingImage.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/controllers/eventsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/views/festival.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/views/userViewAfterLogin.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
@@ -58,7 +73,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/capstone(erwin)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/INVENTORY_WITH__POS_MANAGEMENT_SYSTEM(copy)&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -75,6 +90,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="L:\Downloads\TouristDestanationIfoHub\config" />
       <recent name="L:\Downloads\TouristDestanationIfoHub\assets" />
       <recent name="L:\Downloads\TouristDestanationIfoHub\src\views" />
     </key>
@@ -118,6 +134,15 @@
       <workItem from="1736508531501" duration="19513000" />
       <workItem from="1736555701283" duration="8681000" />
       <workItem from="1736599936411" duration="11769000" />
+      <workItem from="1736645920280" duration="12285000" />
+      <workItem from="1736667855502" duration="5614000" />
+      <workItem from="1736692375135" duration="16000" />
+      <workItem from="1736728160117" duration="604000" />
+      <workItem from="1736729905877" duration="100000" />
+      <workItem from="1736750163257" duration="6130000" />
+      <workItem from="1736760591741" duration="5483000" />
+      <workItem from="1736818392758" duration="3550000" />
+      <workItem from="1736858046712" duration="6372000" />
     </task>
     <servers />
   </component>
