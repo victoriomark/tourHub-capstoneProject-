@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/userLogout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/festival.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/tourist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/tourist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/authController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JQUERY/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JQUERY/municipality.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/municipality.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/eventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/eventsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/municipalityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/municipalityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/touristController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/touristController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/events.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/municipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/municipality.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/touristSpot.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/touristSpot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/showTouristSpotBaseOnMunicipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/showTouristSpotBaseOnMunicipality.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/touristSpot.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/touristSpot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/municipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/municipality.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +131,8 @@
       <workItem from="1736760591741" duration="5483000" />
       <workItem from="1736818392758" duration="3550000" />
       <workItem from="1736858046712" duration="6372000" />
+      <workItem from="1736904376870" duration="4356000" />
+      <workItem from="1736910882671" duration="1596000" />
     </task>
     <servers />
   </component>
