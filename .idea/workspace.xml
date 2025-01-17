@@ -4,36 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67893656b3718.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_678936cb7a9a4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67893557bf1e4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_678935c5aceee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/userFestivalView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" afterDir="false" />
+    <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="NEW UPDATE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_678108916d5cb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_6781497c31ea4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_677fd405df368.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_677fdb34bf2a1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_678107ab91851.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67810810be71c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_677fe53747d98.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_678105ddeeb03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67810830155bb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67810e502d77b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouPage" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/municipality.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/municipality.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/uploadingImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/uploadingImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/eventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/eventsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/municipalityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/municipalityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/municipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/municipality.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/showTouristSpotBaseOnMunicipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/showTouristSpotBaseOnMunicipality.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/upload_images.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/upload_images.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,29 +52,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;L:/Downloads/TouristDestanationIfoHub&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "L:/Downloads/online_resort_reservation",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="L:\Downloads\TouristDestanationIfoHub\config" />
@@ -172,8 +144,18 @@
       <workItem from="1737037449205" duration="2190000" />
       <workItem from="1737043257919" duration="1333000" />
       <workItem from="1737045088419" duration="1200000" />
-      <workItem from="1737073871096" duration="9056000" />
+      <workItem from="1737073871096" duration="9719000" />
+      <workItem from="1737115405953" duration="908000" />
     </task>
+    <task id="LOCAL-00001" summary="NEW UPDATE">
+      <option name="closed" value="true" />
+      <created>1737083212293</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737083212293</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,5 +163,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="NEW UPDATE" />
+    <option name="LAST_COMMIT_MESSAGE" value="NEW UPDATE" />
   </component>
 </project>
