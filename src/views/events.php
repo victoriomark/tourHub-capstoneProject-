@@ -79,9 +79,10 @@
                             <tr>
                                 <th>#</th>
                                 <th>image</th>
-                                <th>Event Name</th>
+                                <th>Patron Name</th>
+                                <th>Festival Date</th>
+                                <th>Fiesta Date</th>
                                 <th>Location</th>
-                                <th>date</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -113,7 +114,7 @@
 </div>
 
 
-<!-- Modal for creating Categort -->
+<!-- Modal for creating event -->
 <form class="modal fade" id="modalCreateEvents" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -123,27 +124,40 @@
             </div>
             <div class="modal-body">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="Title" placeholder="Title" name="Title">
-                    <label for="Title">Title</label>
-                    <div id="Title_msg" class="invalid-feedback" ></div>
-                </div>
-
-                <div class="form-floating mb-3">
                     <textarea class="form-control" name="Description" placeholder="Description" id="Description" style="height: 100px"></textarea>
                     <label for="Description">Description</label>
                     <div id="Description_msg" class="invalid-feedback" ></div>
                 </div>
 
+                <select id="Location" name="Location" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                    <?php
+                    include '../controllers/municipalityController.php';
+                    \controllers\municipalityController::showTitle_Id();
+                    ?>
+                </select>
+
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="Location" placeholder="Location" name="Location">
-                    <label for="Location">Location</label>
-                    <div id="Location_msg" class="invalid-feedback" ></div>
+                    <input type="text" class="form-control" id="nameOfPatron" placeholder="nameOfPatron" name="nameOfPatron">
+                    <label for="nameOfPatron">nameOfPatron</label>
+                    <div id="nameOfPatron_msg" class="invalid-feedback" ></div>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="date" class="form-control" id="Date"  name="Date">
-                    <label for="Date">Date</label>
-                    <div id="Date_msg" class="invalid-feedback" ></div>
+                    <input type="text" class="form-control" id="FestivalName" placeholder="FestivalName" name="FestivalName">
+                    <label for="FestivalName">FestivalName</label>
+                    <div id="FestivalName_msg" class="invalid-feedback" ></div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="FiestaDate"  name="FiestaDate">
+                    <label for="FiestaDate">FiestaDate</label>
+                    <div id="FiestaDate_msg" class="invalid-feedback" ></div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="FestivalDate"  name="FestivalDate">
+                    <label for="FestivalDate">FestivalDate</label>
+                    <div id="FestivalDate_msg" class="invalid-feedback" ></div>
                 </div>
 
                 <label for="image" class="border-1">
