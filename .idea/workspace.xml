@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="NEW UPDATE">
+      <change afterPath="$PROJECT_DIR$/config/adminLogout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/reviewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/reviews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/adminLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JQUERY/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/authController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/eventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/eventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/touristController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/touristController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/uploadImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/uploadImageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/touristSpot.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/touristSpot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/uploadingImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/uploadingImage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +54,9 @@
     <setting file="file://$PROJECT_DIR$/src/JQUERY/uploadingImage.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/controllers/eventsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/Dashboard.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/views/adminLogin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/festival.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/views/userViewAfterLogin.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/views/userViewAfterLogin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
@@ -52,29 +70,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "L:/Downloads/online_resort_reservation",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;L:/Downloads/online_resort_reservation&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="L:\Downloads\TouristDestanationIfoHub\config" />
@@ -145,7 +163,12 @@
       <workItem from="1737043257919" duration="1333000" />
       <workItem from="1737045088419" duration="1200000" />
       <workItem from="1737073871096" duration="9719000" />
-      <workItem from="1737115405953" duration="908000" />
+      <workItem from="1737115405953" duration="12405000" />
+      <workItem from="1737163976341" duration="10190000" />
+      <workItem from="1737201190318" duration="613000" />
+      <workItem from="1737201817329" duration="10398000" />
+      <workItem from="1737212241138" duration="108000" />
+      <workItem from="1737212360811" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="NEW UPDATE">
       <option name="closed" value="true" />
@@ -155,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737083212293</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="NEW UPDATE">
+      <option name="closed" value="true" />
+      <created>1737129206704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737129206704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,3 +1,13 @@
+<?php
+
+use controllers\authController;
+session_start();
+$admin = $_SESSION['admin'];
+if (!isset($admin)){
+    header('Location: Dashboard.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -29,8 +39,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        <li><a class="dropdown-item" href="../../config/adminLogout.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -69,10 +78,13 @@
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body d-lg-flex justify-content-between align-items-center">
                                       <h5>Users</h5>
-                                        <h5>20</h5>
+                                        <?php
+                                        include_once '../controllers/authController.php';
+                                        authController::users();
+                                        ?>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="Dashboard.php">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -81,10 +93,13 @@
                                 <div class="card bg-secondary text-white mb-4">
                                     <div class="card-body d-lg-flex justify-content-between align-items-center">
                                         <h5>Tourist Spot</h5>
-                                        <h5>10</h5>
+                                        <?php
+                                        include_once '../controllers/touristController.php';
+                                         \controllers\touristController::touristSpot();
+                                        ?>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="touristSpot.php">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -93,10 +108,13 @@
                                 <div class="card bg-success text-white mb-4">
                                     <div class="card-body d-lg-flex justify-content-between align-items-center">
                                         <h5>Events</h5>
-                                        <h5>13</h5>
+                                        <?php
+                                        include_once '../controllers/eventsController.php';
+                                        \controllers\eventsController::countedEvents();
+                                        ?>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="events.php">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -105,10 +123,13 @@
                                 <div class="card bg-danger text-white mb-4">
                                     <div class="card-body d-lg-flex justify-content-between align-items-center">
                                         <h5>Images</h5>
-                                        <h5>30</h5>
+                                        <?php
+                                        include_once '../controllers/uploadImageController.php';
+                                        \controllers\uploadImageController::images();
+                                        ?>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="upload_images.php">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -135,7 +156,6 @@
                                     </thead>
                                     <tbody>
                                     <?php
-                                    include '../controllers/authController.php';
                                     \controllers\authController::showUserList();
                                     ?>
                                     </tbody>
