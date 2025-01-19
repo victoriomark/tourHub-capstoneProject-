@@ -3,8 +3,8 @@
 use controllers\authController;
 session_start();
 $admin = $_SESSION['admin'];
-if (!isset($admin)){
-    header('Location: Dashboard.php');
+if (!($admin)){
+    header('Location: adminLogin.php');
     exit();
 }
 ?>
