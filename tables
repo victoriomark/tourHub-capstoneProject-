@@ -1,0 +1,79 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Leaflet Navigator</title>-->
+<!--    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />-->
+<!--    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>-->
+<!--    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />-->
+<!--    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>-->
+<!--    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />-->
+<!--    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>-->
+
+<!--    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>-->
+
+<!--    <style>-->
+<!--        #map {-->
+<!--            height: 600px;-->
+<!--            width: 100%;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="map"></div>-->
+
+<!--<script>-->
+<!--    // Initialize map-->
+<!--    var map = L.map('map').setView([12.515, 124.642], 10); // Northern Samar Coordinates-->
+
+<!--    // Add base map-->
+<!--    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {-->
+<!--        attribution: '&copy; OpenStreetMap contributors'-->
+<!--    }).addTo(map);-->``
+
+<!--    // Add a routing control-->
+<!--    var control = L.Routing.control({-->
+<!--        waypoints: [-->
+<!--            L.latLng(12.498, 124.641), // Catarman-->
+<!--            L.latLng(12.533, 125.035), // Palapag-->
+<!--            L.latLng(12.402, 124.540), // Bobon-->
+<!--            L.latLng(12.600, 124.850), // Mondragon-->
+<!--            L.latLng(12.300, 124.500)  // Pambujan-->
+<!--        ],-->
+<!--        addWaypoints: false, // Disable adding new waypoints-->
+<!--        routeWhileDragging: true,-->
+<!--        geocoder: L.Control.Geocoder.nominatim() // Geocoding functionality-->
+<!--    }).addTo(map);-->
+
+
+<!--    // Add event listener for routing results-->
+<!--    control.on('routesfound', function(e) {-->
+<!--        var routes = e.routes;-->
+<!--        var summary = routes[0].summary;-->
+<!--        Swal.fire({-->
+<!--            title: 'Route Found!',-->
+<!--            text: 'Total distance: ' + (summary.totalDistance / 1000).toFixed(2) + ' km',-->
+<!--            confirmButtonText: 'OK'-->
+<!--        });-->
+<!--    });-->
+
+
+<!--    // Optional: Add a marker animation along the route-->
+<!--    var marker = L.marker([12.498, 124.641]).addTo(map); // Starting point-->
+
+<!--    control.on('routeselected', function(e) {-->
+<!--        var route = e.route.coordinates;-->
+<!--        var index = 0;-->
+
+<!--        function moveMarker() {-->
+<!--            if (index < route.length) {-->
+<!--                marker.setLatLng(route[index]);-->
+<!--                index++;-->
+<!--                setTimeout(moveMarker, 100); // Adjust speed here-->
+<!--            }-->
+<!--        }-->
+
+<!--        moveMarker();-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
