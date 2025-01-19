@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="fixing 404 error" />
+    <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="fixing 404 error">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/userLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/userLogout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JQUERY/uploadingImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/uploadingImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/authController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/eventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/eventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/uploadImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/uploadImageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/uploadingImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/uploadingImage.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,29 +62,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/xampp/htdocs/TouristDestanationIfoHub",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/TouristDestanationIfoHub&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="L:\Downloads\TouristDestanationIfoHub\config" />
@@ -156,6 +166,8 @@
       <workItem from="1737268552717" duration="2485000" />
       <workItem from="1737284540297" duration="1448000" />
       <workItem from="1737287087244" duration="1618000" />
+      <workItem from="1737292261677" duration="254000" />
+      <workItem from="1737292784270" duration="394000" />
     </task>
     <task id="LOCAL-00001" summary="NEW UPDATE">
       <option name="closed" value="true" />

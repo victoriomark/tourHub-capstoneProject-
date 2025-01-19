@@ -61,6 +61,7 @@ class authController
         $data = [];
         $error = [];
 
+
         foreach ($Fields as $field => $message){
             if (!isset($_POST[$field]) || trim($_POST[$field]) === ''){
                 $error[$field] = $message;
