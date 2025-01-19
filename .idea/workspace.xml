@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="fixing bugs">
-      <change afterPath="$PROJECT_DIR$/tables" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/authController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/touristController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/touristController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tables.html" beforeDir="false" />
-    </list>
+    <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="fixing 404 error" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +155,7 @@
       <workItem from="1737250260116" duration="2893000" />
       <workItem from="1737268552717" duration="2485000" />
       <workItem from="1737284540297" duration="1448000" />
-      <workItem from="1737287087244" duration="1374000" />
+      <workItem from="1737287087244" duration="1618000" />
     </task>
     <task id="LOCAL-00001" summary="NEW UPDATE">
       <option name="closed" value="true" />
@@ -205,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737252518508</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixing 404 error">
+      <option name="closed" value="true" />
+      <created>1737288628749</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737288628749</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +216,7 @@
     <MESSAGE value="NEW UPDATE" />
     <MESSAGE value="update new feature adding reviews and admin login" />
     <MESSAGE value="fixing bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs" />
+    <MESSAGE value="fixing 404 error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing 404 error" />
   </component>
 </project>
