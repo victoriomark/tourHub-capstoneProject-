@@ -103,6 +103,7 @@ if (isset($_SESSION['userId'])){
             </div>
         </div>
     </div>
+
 </nav>
 
 <!-- Hero Page -->

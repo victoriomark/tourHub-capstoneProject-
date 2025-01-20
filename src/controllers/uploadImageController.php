@@ -74,8 +74,7 @@ class uploadImageController
                        <td>
                         <img style="height: 50px; width: 50px; object-fit: cover;" class="img-fluid" src="../../assets/imageUploaded/' . $row['image'] . '" alt="image">
                        </td>
-                       <td>' . $row['event_or_touristId'] . '</td>
-                       <td>
+                       <td> 
                         <button id="btn_update" value="'. $row['id'].'" class="btn btn-primary">Edit</button>
                         <button id="btn_delete"  value="'. $row['id'].'" class="btn btn-danger">Delete</button>
                       </td>
@@ -111,7 +110,7 @@ class uploadImageController
             foreach ($data as $row) {
                 $modal .= '
                     <!-- Modal -->
-                <form class="modal fade" id="updateImageModal_'.$row['id'].'" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <form class="modal fade updateImagForm" id="updateImageModal_'.$row['id'].'" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog  modal-dialog-centered">
                     <div class="modal-content">
                     <div class="modal-header">
@@ -125,7 +124,7 @@ class uploadImageController
                             </textarea required>
                             <label for="Description">Description</label>
                             </div>
-
+                             <input type="hidden" name="Id" value=" '.$row['id'].'">
                         </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -142,6 +141,7 @@ class uploadImageController
 
     public function delete(){
         $Id = $_POST['Id'];
+        
 
         if(empty($Id)){
             echo json_encode(['success' => false, 'message' => 'No Id Probated']);
@@ -151,6 +151,22 @@ class uploadImageController
         $image = new uploadingImage();
         $image->delete($Id);
     }
+
+
+    public function update(){
+        $Id = $_POST['Id'];
+        $description = $_POST['updateDescription'];
+        if(empty($Id)){
+            echo json_encode(['success' => false, 'message' => 'No Id Probated']);
+            return;
+        }
+
+        $image = new uploadingImage();
+        $image->update($description,$Id);
+    }
+
+
+      
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
@@ -158,6 +174,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         'store' => (new uploadImageController())->store(),
         'showBaseOnId' => (new uploadImageController())->showBaseID(),
         'Delete' => (new uploadImageController())->delete(),
+        'update' => (new uploadImageController())->update(),
         default => http_response_code(400)
     };
 }

@@ -88,8 +88,37 @@ $(document).ready(function (){
 
             }
           });
-        
-
-
     })
+
+    $(document).on('submit','.updateImagForm',function (event){
+        event.preventDefault()
+        const data = new FormData(this)
+        data.append('action','update')
+        // handle ajax request
+        $.ajax({
+            url: '../controllers/uploadImageController.php',
+            type: 'post',
+            data: data,
+            contentType: false,
+            processData: false,
+            dataType: 'json',
+            success: function (res){
+                if (res.success === true){
+                    Swal.fire({
+                        text: res.message,
+                        icon: "success"
+                    });
+                    setTimeout(() =>{window.location.reload()},1000)
+                }
+
+                if (res.success === false){
+                    Swal.fire({
+                        text: res.message,
+                        icon: "error"
+                    });
+                }
+            }
+        })
+    })
+
 })

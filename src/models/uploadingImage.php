@@ -135,4 +135,29 @@ class uploadingImage extends \Connection
         }
 
     }
+
+    public function update($description,$id):void{
+        try{
+            $conn = $this->Connect();
+
+            $query = "UPDATE images SET description = ? WHERE id  = ?";
+            $stmt = $conn->prepare($query);
+            $stmt->bind_param('si',$description,$id);
+
+            if(!$stmt){
+                echo json_encode(['success' => false, 'message' => 'Failed to Prepare Statement']);
+                return;
+            }
+
+            if($stmt->execute()){
+                echo json_encode(['success' => true, 'message' => 'Successfully Updated']);
+                return;
+            }else{
+                echo json_encode(['success' => false, 'message' => 'Error'.$stmt->error]);
+            }
+
+        }catch(Exception $e){
+            error_log('Error: '. $e->getMessage());
+        }
+    }
 }
