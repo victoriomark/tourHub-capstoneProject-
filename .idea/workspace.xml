@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="fixing 404 error">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/userLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/userLogout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/uploadingImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/uploadingImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/authController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/eventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/eventsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/uploadImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/uploadImageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/uploadingImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/uploadingImage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/municipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/municipality.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tables" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/TouristDestanationIfoHub&quot;,
+    &quot;last_opened_file_path&quot;: &quot;L:/Downloads/INVENTORY_WITH__POS_MANAGEMENT_SYSTEM(copy)&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -168,6 +163,11 @@
       <workItem from="1737287087244" duration="1618000" />
       <workItem from="1737292261677" duration="254000" />
       <workItem from="1737292784270" duration="394000" />
+      <workItem from="1737362103679" duration="601000" />
+      <workItem from="1737378362762" duration="31000" />
+      <workItem from="1737386807266" duration="4414000" />
+      <workItem from="1737391865978" duration="83000" />
+      <workItem from="1737391959777" duration="547000" />
     </task>
     <task id="LOCAL-00001" summary="NEW UPDATE">
       <option name="closed" value="true" />
