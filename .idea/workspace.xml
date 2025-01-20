@@ -5,13 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="fixing 404 error">
+      <change afterPath="$PROJECT_DIR$/includes/modal_where_ToEat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/modal_where_ToStay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JQUERY/WhereToEat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JQUERY/whereToStay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/where_to_eatController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/where_to_stayController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/where_to_eat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/where_to_stay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/where_to_Eat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/where_to_Stay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/userLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/userLogout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/adminNav.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/adminNav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/uploadingImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/uploadingImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/authController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/eventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/eventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JQUERY/municipality.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/municipality.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/municipalityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/municipalityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/uploadImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/uploadImageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/uploadingImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/uploadingImage.php" afterDir="false" />
     </list>
@@ -39,16 +50,18 @@
     <setting file="file://$PROJECT_DIR$/includes/adminNav.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/index.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/Auth.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/JQUERY/WhereToEat.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/events.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/municipality.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/tourist.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/uploadingImage.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/JQUERY/whereToStay.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/controllers/eventsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/models/uploadingImage.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/views/Dashboard.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/adminLogin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/festival.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/views/userViewAfterLogin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/tables.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
@@ -168,6 +181,36 @@
       <workItem from="1737287087244" duration="1618000" />
       <workItem from="1737292261677" duration="254000" />
       <workItem from="1737292784270" duration="394000" />
+      <workItem from="1737362103679" duration="601000" />
+      <workItem from="1737378362762" duration="31000" />
+      <workItem from="1737386807266" duration="4414000" />
+      <workItem from="1737391865978" duration="83000" />
+      <workItem from="1737391959777" duration="547000" />
+      <workItem from="1737420476438" duration="6143000" />
+      <workItem from="1737450258793" duration="4777000" />
+      <workItem from="1737455568159" duration="2802000" />
+      <workItem from="1737458972767" duration="1086000" />
+      <workItem from="1737466119608" duration="46000" />
+      <workItem from="1737469860090" duration="6239000" />
+      <workItem from="1737476126564" duration="1300000" />
+      <workItem from="1737477440289" duration="193000" />
+      <workItem from="1737477644764" duration="424000" />
+      <workItem from="1737478078960" duration="97000" />
+      <workItem from="1737510802275" duration="7855000" />
+      <workItem from="1737525686988" duration="6338000" />
+      <workItem from="1737532041448" duration="731000" />
+      <workItem from="1737541412276" duration="50000" />
+      <workItem from="1737599226696" duration="3712000" />
+      <workItem from="1737603035913" duration="2497000" />
+      <workItem from="1737605547393" duration="1675000" />
+      <workItem from="1737607237163" duration="1000000" />
+      <workItem from="1737608249380" duration="492000" />
+      <workItem from="1737608754404" duration="28000" />
+      <workItem from="1737608795249" duration="506000" />
+      <workItem from="1737609313189" duration="13000" />
+      <workItem from="1737609336970" duration="488000" />
+      <workItem from="1737625344018" duration="1155000" />
+      <workItem from="1737635987528" duration="11140000" />
     </task>
     <task id="LOCAL-00001" summary="NEW UPDATE">
       <option name="closed" value="true" />

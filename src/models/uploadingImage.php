@@ -144,10 +144,6 @@ class uploadingImage extends \Connection
             $stmt = $conn->prepare($query);
             $stmt->bind_param('si',$description,$id);
 
-            if(!$stmt){
-                echo json_encode(['success' => false, 'message' => 'Failed to Prepare Statement']);
-                return;
-            }
 
             if($stmt->execute()){
                 echo json_encode(['success' => true, 'message' => 'Successfully Updated']);

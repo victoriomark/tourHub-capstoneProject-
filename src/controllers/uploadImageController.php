@@ -139,7 +139,7 @@ class uploadImageController
         }
     }
 
-    public function delete(){
+    public function delete():void{
         $Id = $_POST['Id'];
         
 
