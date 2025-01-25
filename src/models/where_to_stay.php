@@ -4,6 +4,7 @@ namespace models;
 use Connection;
 use Exception;
 require_once '../../config/Connection.php';
+require_once '../../Teamplates/JsonResponseHelper.php';
 class where_to_stay extends Connection
 {
     public function store(string $place, string $phoneNumber, string $municipality):void{
@@ -93,5 +94,51 @@ class where_to_stay extends Connection
         return[];
     }
 
+    public  function update(string $place, string $municipality, string $phoneNumber, $id):void
+    {
+        try {
+            $conn = $this->Connect();
+            $query = "UPDATE  tb_wheretostay SET place_name = ? , municipality = ?, phoneNumber = ? WHERE id = ?";
+            $stmt = $conn->prepare($query);
 
+            if (!$stmt){
+                \JsonResponseHelper::JsonResponseHelper(false,'Failed To Prepare Statement');
+                return;
+            }
+            $stmt->bind_param('sssi',$place,$municipality,$phoneNumber,$id);
+
+            if ($stmt->execute()){
+              \JsonResponseHelper::JsonResponseHelper(true, 'Successfully Updated'. ' ' .$place);
+            }else{
+                \JsonResponseHelper::JsonResponseHelper(false,'Error'.$stmt->error);
+            }
+        }catch (Exception $e){
+            error_log('DatabaseError'. $e->getMessage());
+        }
+
+    }
+
+    public function Delete($Id)
+    {
+        try {
+            $conn = $this->Connect();
+            $query = "DELETE FROM tb_wheretostay WHERE id = ?";
+            $stmt = $conn->prepare($query);
+
+            if (!$stmt){
+                \JsonResponseHelper::JsonResponseHelper(false, 'Failed to Parepare Statement');
+                return;
+            }
+            $stmt->bind_param('i',$Id);
+
+            if ($stmt->execute()){
+                \JsonResponseHelper::JsonResponseHelper(true,'Successfully Deleted');
+            }else{
+                \JsonResponseHelper::JsonResponseHelper(false, 'Error'. $stmt->error);
+            }
+
+        }catch (Exception $e){
+            error_log('DatabaseError'. $e->getMessage());
+        }
+    }
 }

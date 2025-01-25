@@ -1,0 +1,1 @@
+<?phpclass JsonResponseHelper{    public static function JsonResponseHelper(bool $success, string $message):void    {        echo  json_encode(['success' => $success, 'message' => $message ]);    }}

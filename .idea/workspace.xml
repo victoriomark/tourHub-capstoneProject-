@@ -5,26 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="fixing 404 error">
-      <change afterPath="$PROJECT_DIR$/includes/modal_where_ToEat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/modal_where_ToStay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JQUERY/WhereToEat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JQUERY/whereToStay.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/where_to_eatController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/where_to_stayController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/where_to_eat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/where_to_stay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/where_to_Eat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/where_to_Stay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Teamplates/JsonResponseHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/DisplayContactModal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JQUERY/ContactAndHotlines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/Contact_AndHotLinesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Contact_AndHotLines.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/AddingContact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/userLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/userLogout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/adminNav.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/adminNav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/municipality.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/municipality.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/municipalityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/municipalityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/uploadImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/uploadImageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/uploadingImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/uploadingImage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JQUERY/whereToStay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/whereToStay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/where_to_stayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/where_to_stayController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/where_to_stay.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/where_to_stay.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +37,32 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/includes/adminNav.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/index.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/Auth.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/JQUERY/ContactAndHotlines.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/WhereToEat.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/events.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/municipality.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/tourist.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/uploadingImage.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/whereToStay.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/controllers/Contact_AndHotLinesController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/controllers/eventsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/controllers/where_to_stayController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/models/Contact_AndHotLines.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/models/uploadingImage.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/models/where_to_stay.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/views/AddingContact.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/views/Dashboard.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/adminLogin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/festival.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
@@ -211,6 +216,11 @@
       <workItem from="1737609336970" duration="488000" />
       <workItem from="1737625344018" duration="1155000" />
       <workItem from="1737635987528" duration="11140000" />
+      <workItem from="1737684868385" duration="8182000" />
+      <workItem from="1737700381643" duration="8822000" />
+      <workItem from="1737722548591" duration="11739000" />
+      <workItem from="1737734325252" duration="1477000" />
+      <workItem from="1737770970528" duration="4406000" />
     </task>
     <task id="LOCAL-00001" summary="NEW UPDATE">
       <option name="closed" value="true" />

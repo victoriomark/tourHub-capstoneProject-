@@ -108,6 +108,7 @@ if (isset($_SESSION['userId'])) {
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#TopTreeContainer">Reviews</a>
                     </li>
+
                     <li class="nav-item">
                         <a data-bs-target="#modal_WhereToStay" data-bs-toggle="modal" class="nav-link text-white" href="#">Where to Stay</a>
                     </li>
@@ -116,9 +117,11 @@ if (isset($_SESSION['userId'])) {
                         <a data-bs-target="#modal_WhereToEat" data-bs-toggle="modal" class="nav-link text-white" href="#">Where to Eat</a>
                     </li>
 
-
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#TopTreeContainer"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-target="#DisplayContactModal" data-bs-toggle="modal" class="nav-link text-white" href="#">Contact You Might Need</a>
                     </li>
                 </ul>
                 <div>
@@ -317,6 +320,7 @@ if (isset($_SESSION['userId'])) {
                         <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Reviews</a></li>
+
                     </ul>
                 </div>
                 <!-- Contact Section -->
@@ -330,7 +334,7 @@ if (isset($_SESSION['userId'])) {
             <div class="row mt-3">
                 <div class="col text-center">
                     <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light me-2"><i class="bi bi-t.witter"></i></a>
                     <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="text-light me-2"><i class="bi bi-youtube"></i></a>
                 </div>
@@ -442,6 +446,7 @@ if (isset($_SESSION['userId'])) {
     <?php
     include 'includes/modal_where_ToStay.php';
     include 'includes/modal_where_ToEat.php';
+    include 'includes/DisplayContactModal.php';
     ?>
 </section>
 
@@ -452,8 +457,6 @@ if (isset($_SESSION['userId'])) {
 </body>
 
 </html>
-
-
 <!-- Initialize Swiper -->
 <script>
     const swiper = new Swiper('.mySwiper', {
@@ -515,7 +518,18 @@ if (isset($_SESSION['userId'])) {
             }
         })
 
-        //
+   $.ajax({
+            url: 'src/controllers/Contact_AndHotLinesController.php',
+            type: 'POST',
+            data: {
+                action: 'Display'
+            },
+            success: function(data) {
+                $('#listContact').html(data);
+            }
+        })
+
+
 
         $(document).on('change','#filterSelect',function (e){
             $.ajax({
@@ -538,6 +552,7 @@ if (isset($_SESSION['userId'])) {
                $('#filterSelect').html(data)
             }
         })
+
          $.ajax({
             url: 'src/controllers/where_to_eatController.php',
             type: 'POST',

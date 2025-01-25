@@ -1193,7 +1193,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     </schema>
     <schema id="341" parent="1" name="touristhub">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2025-01-21.10:10:16</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-01-24.07:13:49</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="342" parent="1" name="typing_game">
@@ -1221,132 +1221,130 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="350" parent="341" name="event">
+    <table id="350" parent="341" name="contacts">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="351" parent="341" name="images">
+    <table id="351" parent="341" name="event">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="352" parent="341" name="municipality">
+    <table id="352" parent="341" name="images">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="353" parent="341" name="tb_reviews">
+    <table id="353" parent="341" name="municipality">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="354" parent="341" name="tb_wheretoeat">
+    <table id="354" parent="341" name="tb_reviews">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="355" parent="341" name="tb_wheretostay">
+    <table id="355" parent="341" name="tb_wheretoeat">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="356" parent="341" name="touristspot">
+    <table id="356" parent="341" name="tb_wheretostay">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="357" parent="341" name="users">
+    <table id="357" parent="341" name="touristspot">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <column id="358" parent="349" name="id">
+    <table id="358" parent="341" name="users">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="359" parent="349" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DasType>int(10) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="359" parent="349" name="username">
+    <column id="360" parent="349" name="username">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="360" parent="349" name="password">
+    <column id="361" parent="349" name="password">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="361" parent="349" name="PRIMARY">
+    <index id="362" parent="349" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="362" parent="349" name="PRIMARY">
+    <key id="363" parent="349" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="363" parent="350" name="id">
+    <column id="364" parent="350" name="Mucipality">
+      <DasType>varchar(100)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="365" parent="350" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="366" parent="350" name="PhoneNumber">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="367" parent="350" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="368" parent="350" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="369" parent="351" name="id">
       <AutoIncrement>7</AutoIncrement>
       <DasType>int(10) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="364" parent="350" name="description">
+    <column id="370" parent="351" name="description">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="365" parent="350" name="image">
+    <column id="371" parent="351" name="image">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="366" parent="350" name="fiestaDate">
+    <column id="372" parent="351" name="fiestaDate">
       <DasType>varchar(250)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="367" parent="350" name="location">
+    <column id="373" parent="351" name="location">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="368" parent="350" name="nameOfThePatron">
+    <column id="374" parent="351" name="nameOfThePatron">
       <DasType>varchar(100)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="369" parent="350" name="FestivalDate">
+    <column id="375" parent="351" name="FestivalDate">
       <DasType>varchar(250)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="370" parent="350" name="festivalName">
+    <column id="376" parent="351" name="festivalName">
       <DasType>varchar(100)|0s</DasType>
       <Position>8</Position>
-    </column>
-    <index id="371" parent="350" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="372" parent="350" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="373" parent="351" name="id">
-      <AutoIncrement>8</AutoIncrement>
-      <DasType>int(10) unsigned|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="374" parent="351" name="image">
-      <DasType>varchar(255)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="375" parent="351" name="description">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="376" parent="351" name="event_or_touristId">
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
     </column>
     <index id="377" parent="351" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1360,21 +1358,23 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     </key>
     <column id="379" parent="352" name="id">
       <AutoIncrement>8</AutoIncrement>
-      <DasType>int(11)|0s</DasType>
+      <DasType>int(10) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="380" parent="352" name="municipalityName">
-      <DasType>varchar(100)|0s</DasType>
+    <column id="380" parent="352" name="image">
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="381" parent="352" name="image">
-      <DasType>varchar(250)|0s</DasType>
+    <column id="381" parent="352" name="description">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="382" parent="352" name="description">
-      <DasType>text|0s</DasType>
+    <column id="382" parent="352" name="event_or_touristId">
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <index id="383" parent="352" name="PRIMARY">
@@ -1388,48 +1388,49 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="385" parent="353" name="id">
+      <AutoIncrement>9</AutoIncrement>
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="386" parent="353" name="municipalityName">
+      <DasType>varchar(100)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="387" parent="353" name="image">
+      <DasType>varchar(250)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="388" parent="353" name="description">
+      <DasType>text|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="389" parent="353" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="390" parent="353" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="391" parent="354" name="id">
       <AutoIncrement>5</AutoIncrement>
       <DasType>int(10) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="386" parent="353" name="message">
+    <column id="392" parent="354" name="message">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="387" parent="353" name="userId">
+    <column id="393" parent="354" name="userId">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-    </column>
-    <index id="388" parent="353" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="389" parent="353" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="390" parent="354" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="391" parent="354" name="place">
-      <DasType>varchar(100)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="392" parent="354" name="category">
-      <DasType>varchar(100)|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <column id="393" parent="354" name="municipality">
-      <DasType>varchar(100)|0s</DasType>
-      <Position>4</Position>
     </column>
     <index id="394" parent="354" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1441,17 +1442,17 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="396" parent="355" name="place_name">
-      <DasType>varchar(100)|0s</DasType>
-      <Position>1</Position>
-    </column>
-    <column id="397" parent="355" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="396" parent="355" name="id">
+      <AutoIncrement>9</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="397" parent="355" name="place">
+      <DasType>varchar(100)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="398" parent="355" name="phoneNumber">
+    <column id="398" parent="355" name="category">
       <DasType>varchar(100)|0s</DasType>
       <Position>3</Position>
     </column>
@@ -1469,99 +1470,127 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="402" parent="356" name="id">
+    <column id="402" parent="356" name="place_name">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="403" parent="356" name="id">
+      <AutoIncrement>8</AutoIncrement>
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="404" parent="356" name="phoneNumber">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="405" parent="356" name="municipality">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="406" parent="356" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="407" parent="356" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="408" parent="357" name="id">
       <AutoIncrement>6</AutoIncrement>
       <DasType>int(10) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="403" parent="356" name="title">
+    <column id="409" parent="357" name="title">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="404" parent="356" name="description">
+    <column id="410" parent="357" name="description">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="405" parent="356" name="location">
+    <column id="411" parent="357" name="location">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="406" parent="356" name="image">
+    <column id="412" parent="357" name="image">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="407" parent="356" name="munipality_Id">
+    <column id="413" parent="357" name="munipality_Id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="408" parent="356" name="PRIMARY">
+    <index id="414" parent="357" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="409" parent="356" name="PRIMARY">
+    <key id="415" parent="357" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="410" parent="357" name="id">
+    <column id="416" parent="358" name="id">
       <AutoIncrement>4</AutoIncrement>
       <DasType>int(10) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="411" parent="357" name="firstName">
+    <column id="417" parent="358" name="firstName">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="412" parent="357" name="lastName">
+    <column id="418" parent="358" name="lastName">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="413" parent="357" name="username">
+    <column id="419" parent="358" name="username">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="414" parent="357" name="password">
+    <column id="420" parent="358" name="password">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="415" parent="357" name="email">
+    <column id="421" parent="358" name="email">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="416" parent="357" name="address">
+    <column id="422" parent="358" name="address">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="417" parent="357" name="phoneNumber">
+    <column id="423" parent="358" name="phoneNumber">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="418" parent="357" name="contactPerson">
+    <column id="424" parent="358" name="contactPerson">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <index id="419" parent="357" name="PRIMARY">
+    <index id="425" parent="358" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="420" parent="357" name="PRIMARY">
+    <key id="426" parent="358" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
