@@ -5,19 +5,232 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db0742-d84a-4c63-8c2a-f34ca665291d" name="Changes" comment="fixing 404 error">
-      <change afterPath="$PROJECT_DIR$/Teamplates/JsonResponseHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/DisplayContactModal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JQUERY/ContactAndHotlines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/Contact_AndHotLinesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Contact_AndHotLines.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/AddingContact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67a85baa1d43c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67a85ca54aa97.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67a85d1a13b65.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67a85d7b14d17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67a85de5c33c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67a85e6c84c97.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67ad84f76c029.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67ae235b3bd35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67af325177e1d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/EventUploadedImage/EventImage_67af3d931a8cf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_679e01cece39e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a36f80bf699.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a36f99c73a8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b6db72d7e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b6f091e60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b6fd38839.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b72aae111.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b73f9f244.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b757cf4f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b7842e078.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b87c6b192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b8869a8e8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b89007428.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b89b0a27d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b8a64f33c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5b8b1a9b2c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5bac6ae931.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5bad78bb8d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5bae7a3d56.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a5baf5e207a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a820cac5f38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a820dad6c0c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a820f0e4156.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a821065a294.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8223a989fe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8224d77a26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8225cd8c15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8227933fef.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a823eb04c29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a823fa9ef9c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8267668b8b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8268e0bd68.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8269d3fee1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a826b081c4f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a826c36a7bb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a827d7b0bf6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a827e79eb4d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a827f665940.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a828f92c0e9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8290800250.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a829193e8f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8292a79039.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a829382aa0a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82a0273039.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82a0f72187.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82a1c96e9b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82a2a80aae.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82afeeb939.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82b0f26d30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82b1d932e8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82b31794fa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82c045ea4a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82c1245c62.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82c20b9043.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82c2e7e7d6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82cde85cef.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82ced87774.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82d016366e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82d1152603.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82d21d0e77.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82d3054835.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82d40d9b84.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82d5561a97.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82e352b3f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82e44929f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82e53951c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82e6738eb4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82f0faa376.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82f21b435d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82f327b4a7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82f473433b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82fdc63513.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82fe8b227f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a82ff5e1c9c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a830035335d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a830133178d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8302182e8d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8302fdeb73.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8312f804e1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8314f13127.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a831642fc33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8319677241.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8325174578.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8325f767b9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8327987728.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8329e63de7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a833619a509.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a83376170c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8338623860.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8340a31540.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8342bbed95.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8343726220.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8344151d67.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a8352bdeb44.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a83536381a6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a835e947680.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a835fc1851e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a83609ecdd2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67a83616ed443.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/imageUploaded/UploadedImage_67ae23103d3c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/188bce12-39ca-4f56-9ba5-65c2ed0fd634.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/no_data.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/plane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/undraw_aircraft_usu4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_678f75ae312f2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a36eaa39671.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a59e6981cd4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ac2cbd27a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ac576ff63.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ac8b7466d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5aca096852.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5acc009b78.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5aced08019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ad082557a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ad2788a9d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ad4edc129.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ad6b6c47d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ad84d6ba5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ada50cbf4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5adc6bd0b7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5add89ad9e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ade91d087.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5adfc28651.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ae1738ca8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ae28e914a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ae3814893.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ae5960c3a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5ae68f0582.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5af1ea559b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5af4ca5b24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5af850d3d4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5b0ae05eb1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67a5b0d210540.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/municipalityUploaded/MunicipalityImage_67ae22e5ecb3c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a36efc0661d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a5b6b34c937.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a5b86337312.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a5ba8c9a84a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a820a530ada.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a822089a280.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a8239c78a6b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a826561ca0b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a827ba4be38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a828d80ee78.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a829e85d130.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a82ad256812.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a82beb9665e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a82cbe82e12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a82e175c6d1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a82ef4a47f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a82fbd01f19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a831151f799.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a8322f3e327.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a83345d0d38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a833e867bbb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a835104dd5a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67a835ad468ab.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/uploadedTouristImage/touristImage_67ae22ab4159d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JQUERY/Iterinary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/IterinaryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Iterinary.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Iterinary_admin_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/db-u491172764_dev.5f90Lg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/dbname.CRg9sA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/e-commerce_db.-nY49w.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/eam_db.LFzjsQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/epes_db.5CO5ow.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/example.ahElsQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/foncy_paraiso.YSCDQg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/group3_db.CT-Mpw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/hero.-s8wAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/lms19.uiwlBg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/mema.LBUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/my_app.DgHWwA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/ofrs_db.xS9epA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/oswa_inv.4HOjng.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/phpecom.dKCL3A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/student.O4L-jw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/test1.302SBg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/testproject.Rx7xcg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/textapp.1Il9qw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/todo_app.qH7Jsg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/touristhub.gwAbvQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5098dc5-0a1d-46d2-b93c-db1af9c586fe/storage_v2/_src_/schema/u944654671_kbrkds.n5WGAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/adminNav.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/adminNav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JQUERY/whereToStay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/whereToStay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JQUERY/tourist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JQUERY/tourist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/eventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/eventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/municipalityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/municipalityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/reviewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/reviewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/touristController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/touristController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/where_to_eatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/where_to_eatController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/where_to_stayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/where_to_stayController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/municipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/municipality.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/reviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/reviews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/where_to_eat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/where_to_eat.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/where_to_stay.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/where_to_stay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/festival.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/festival.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/municipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/municipality.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/showTouristSpotBaseOnMunicipality.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/showTouristSpotBaseOnMunicipality.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/userFestivalView.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/userFestivalView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/userViewAfterLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/where_to_Eat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/where_to_Eat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +263,7 @@
     <setting file="file://$PROJECT_DIR$/index.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/Auth.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/ContactAndHotlines.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/JQUERY/Iterinary.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/WhereToEat.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/events.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/JQUERY/municipality.js" root0="SKIP_INSPECTION" />
@@ -58,14 +272,17 @@
     <setting file="file://$PROJECT_DIR$/src/JQUERY/whereToStay.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/controllers/Contact_AndHotLinesController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/controllers/eventsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/controllers/reviewsController.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/controllers/where_to_stayController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/models/Contact_AndHotLines.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/models/uploadingImage.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/models/where_to_stay.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/AddingContact.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/views/Dashboard.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/views/Iterinary_admin_view.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/adminLogin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/festival.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/views/showTouristSpotBaseOnMunicipality.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/userViewAfterLogin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
@@ -104,7 +321,15 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\TouristDestanationIfoHub\assets\img" />
+      <recent name="C:\xampp\htdocs\TouristDestanationIfoHub\assets\uploadedTouristImage" />
+      <recent name="C:\xampp\htdocs\TouristDestanationIfoHub\assets\municipalityUploaded" />
+      <recent name="C:\xampp\htdocs\TouristDestanationIfoHub\assets\imageUploaded" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\TouristDestanationIfoHub\assets\img" />
+      <recent name="C:\xampp\htdocs\TouristDestanationIfoHub\assets\EventUploadedImage" />
       <recent name="L:\Downloads\TouristDestanationIfoHub\config" />
       <recent name="L:\Downloads\TouristDestanationIfoHub\assets" />
       <recent name="L:\Downloads\TouristDestanationIfoHub\src\views" />
@@ -221,6 +446,78 @@
       <workItem from="1737722548591" duration="11739000" />
       <workItem from="1737734325252" duration="1477000" />
       <workItem from="1737770970528" duration="4406000" />
+      <workItem from="1737791401963" duration="802000" />
+      <workItem from="1737969043579" duration="542000" />
+      <workItem from="1738108709688" duration="115000" />
+      <workItem from="1738127399862" duration="14000" />
+      <workItem from="1738129780960" duration="75000" />
+      <workItem from="1738140825203" duration="1979000" />
+      <workItem from="1738157732940" duration="547000" />
+      <workItem from="1738158298745" duration="58000" />
+      <workItem from="1738158381495" duration="1651000" />
+      <workItem from="1738238565519" duration="109000" />
+      <workItem from="1738238686121" duration="231000" />
+      <workItem from="1738408259872" duration="271000" />
+      <workItem from="1738460912710" duration="36000" />
+      <workItem from="1738509986550" duration="839000" />
+      <workItem from="1738594685414" duration="612000" />
+      <workItem from="1738595324516" duration="310000" />
+      <workItem from="1738597800628" duration="17000" />
+      <workItem from="1738767317638" duration="43000" />
+      <workItem from="1738767748335" duration="900000" />
+      <workItem from="1738806333040" duration="606000" />
+      <workItem from="1738821883786" duration="280000" />
+      <workItem from="1738844696834" duration="1187000" />
+      <workItem from="1738845900098" duration="985000" />
+      <workItem from="1738848245153" duration="191000" />
+      <workItem from="1739530342955" duration="3311000" />
+      <workItem from="1739575706832" duration="599000" />
+      <workItem from="1739710411613" duration="1357000" />
+      <workItem from="1739751939373" duration="221000" />
+      <workItem from="1739773626643" duration="4000" />
+      <workItem from="1739777043843" duration="18000" />
+      <workItem from="1739779939142" duration="81000" />
+      <workItem from="1739780192023" duration="112000" />
+      <workItem from="1739780389608" duration="548000" />
+      <workItem from="1739781140826" duration="1276000" />
+      <workItem from="1739782440350" duration="5330000" />
+      <workItem from="1739790025016" duration="5516000" />
+      <workItem from="1739795571057" duration="64000" />
+      <workItem from="1739795656757" duration="3373000" />
+      <workItem from="1739799049443" duration="104000" />
+      <workItem from="1739799169516" duration="84000" />
+      <workItem from="1739799264556" duration="139000" />
+      <workItem from="1739799415952" duration="70000" />
+      <workItem from="1739799496536" duration="616000" />
+      <workItem from="1739800124282" duration="342000" />
+      <workItem from="1739800966061" duration="631000" />
+      <workItem from="1739804865793" duration="637000" />
+      <workItem from="1739828185179" duration="598000" />
+      <workItem from="1739840471761" duration="656000" />
+      <workItem from="1739953168018" duration="2117000" />
+      <workItem from="1739955300527" duration="620000" />
+      <workItem from="1739956458210" duration="3006000" />
+      <workItem from="1739959482618" duration="848000" />
+      <workItem from="1739960346555" duration="34000" />
+      <workItem from="1739960392480" duration="97000" />
+      <workItem from="1739960500893" duration="815000" />
+      <workItem from="1739961345736" duration="171000" />
+      <workItem from="1739961530190" duration="290000" />
+      <workItem from="1739969938121" duration="77000" />
+      <workItem from="1739970028361" duration="28000" />
+      <workItem from="1739970074712" duration="1398000" />
+      <workItem from="1739971489255" duration="72000" />
+      <workItem from="1739971572764" duration="153000" />
+      <workItem from="1739971737704" duration="1007000" />
+      <workItem from="1739972765103" duration="728000" />
+      <workItem from="1739973507266" duration="2403000" />
+      <workItem from="1739975924615" duration="731000" />
+      <workItem from="1739976670106" duration="3179000" />
+      <workItem from="1739979870440" duration="162000" />
+      <workItem from="1740063118275" duration="31000" />
+      <workItem from="1740063484301" duration="17000" />
+      <workItem from="1740063700845" duration="6000" />
+      <workItem from="1740063838313" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="NEW UPDATE">
       <option name="closed" value="true" />

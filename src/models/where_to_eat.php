@@ -62,17 +62,13 @@ class where_to_eat extends Connection
       return [];
   }
 
-  public function update()
-  {
-
-  }
 
 
   public function filterByCategoryAndMunicipality(string $category ,string $municipality):array
   {
       try {
           $conn = $this->Connect();
-          $query = "SELECT place , municipality FROM tb_wheretoeat WHERE category = ? AND municipality = ?";
+          $query = "SELECT  DISTINCT  place , municipality FROM tb_wheretoeat WHERE category = ? AND municipality = ?";
           $stmt = $conn->prepare($query);
 
           if (!$stmt){
@@ -118,6 +114,34 @@ class where_to_eat extends Connection
       }
     return $data;
   }
+
+    public function showBaseOnMunicipality($municipality):array
+    {
+        $data = [];
+        try {
+            $conn = $this->Connect();
+            $query = "SELECT DISTINCT *  FROM tb_wheretoeat WHERE municipality = ?";
+
+            $stmt = $conn->prepare($query);
+            $stmt->bind_param('s',$municipality);
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            if ($result->num_rows > 0){
+                while ($row = $result->fetch_assoc()){
+                    $data[] = $row;
+                }
+            }
+
+        }catch (Exception $e){
+            error_log('Database Error'. $e->getMessage());
+        } finally {
+            if (isset($conn)){
+                $conn->close();
+            }
+        }
+        return $data;
+    }
 
   public function showAll():array
   {

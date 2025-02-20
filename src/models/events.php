@@ -6,7 +6,7 @@ use Exception;
 require_once '../../config/Connection.php';
 class events extends \Connection
 {
-    public function store(string $description,string $image,string $fiestaDate, string$location ,string $nameOfThePatron,$FestivalDate,$festivalName):void // store the tourist spot information
+    public function store(string $description,string $image,string $fiestaDate, string $location ,string $nameOfThePatron, string $FestivalDate, string $festivalName):void // store the tourist spot information
     {
         $conn = $this->Connect();
         $query = "INSERT INTO event(description, image, fiestaDate,location,nameOfThePatron,FestivalDate,festivalName)values (?,?,?,?,?,?,?)";

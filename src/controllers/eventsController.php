@@ -201,8 +201,8 @@ class eventsController
             foreach ($data as $row){
                 $card .= '
                    <!-- Card Start -->
-                    <div action="showTouristSpotBaseOnMunicipality.php" method="post" class="card p-0 col-lg-3 col-md-5">
-                        <img style="height: 40vh; object-fit: cover" class="card-img-top card-img" src="../../assets/EventUploadedImage/'.$row['image'].'" alt="image">
+                    <div style="height: 20vh; width: 200px" action="showTouristSpotBaseOnMunicipality.php" method="post" class="card p-0 col-lg-3 col-md-5">
+                        <img class="card-img" src="../../assets/EventUploadedImage/'.$row['image'].'" alt="image">
                         <div class="card-body">
                             <h5 class="card-title text-light">'.$row['location'].'</h5>
                             <button data-bs-target="#DetailsModal_'.$row['id'].'" data-bs-toggle="modal" type="button" class="btn btn-danger">View Details</button>
@@ -222,7 +222,7 @@ class eventsController
                              <div class="d-flex flex-column justify-content-center align-items-center P-3">
                              <h1>NAME OF THE PATRON</h1>
                               <span>'.$row['nameOfThePatron'].'</span>
-                              <img style=" min-height: 50vh; object-fit: cover" class="card-img-top card-img" src="../../assets/EventUploadedImage/'.$row['image'].'" alt="image">
+                              <img style="min-height: 50vh; object-fit: cover" class="card-img-top card-img" src="../../assets/EventUploadedImage/'.$row['image'].'" alt="image">
                            </div>
                           <div class="mt-4">
                           <div class="d-flex flex-column justify-content-center align-items-center">

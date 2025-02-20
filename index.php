@@ -1,9 +1,4 @@
-<?php
-session_start();
-if (isset($_SESSION['userId'])) {
-    header('Location: ./views/userViewAfterLogin.php');
-}
-?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,7 +6,6 @@ if (isset($_SESSION['userId'])) {
     <meta name="viewport"
      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
-    <link href="https://fonts.cdnfonts.com/css/ninja-naruto" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -19,6 +13,8 @@ if (isset($_SESSION['userId'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--  AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home</title>
     <style>
         #map {
@@ -75,6 +71,43 @@ if (isset($_SESSION['userId'])) {
                 /* Adjust for larger screens */
             }
         }
+
+        .text-overlay {
+            font-size: 100px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: url('assets/img/bg.jpg') no-repeat center;
+            background-size: cover;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+        .text-logo {
+            font-weight: bold;
+            text-transform: uppercase;
+            background: url('assets/img/bg.jpg') no-repeat center;
+            background-size: cover;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .text-overlay {
+                font-size: 50px;
+                font-weight: bold;
+            }
+        }
+
+        #review_card{
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(1.6px);
+            -webkit-backdrop-filter: blur(1.6px);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
     </style>
 </head>
 
@@ -82,7 +115,7 @@ if (isset($_SESSION['userId'])) {
     <nav style="background-color: #0D5C75" class="navbar navbar-expand-lg navbar-dark p-3 sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <h5>TourHub</h5>
+                <h5 class="text-logo">INFORMATION HUB</h5>
             </a>
             <button
                 class="navbar-toggler"
@@ -105,29 +138,22 @@ if (isset($_SESSION['userId'])) {
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#footer">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#TopTreeContainer">Reviews</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a data-bs-target="#modal_WhereToStay" data-bs-toggle="modal" class="nav-link text-white" href="#">Where to Stay</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a data-bs-target="#modal_WhereToEat" data-bs-toggle="modal" class="nav-link text-white" href="#">Where to Eat</a>
-                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#TopTreeContainer"></a>
                     </li>
+
                     <li class="nav-item">
-                        <a data-bs-target="#DisplayContactModal" data-bs-toggle="modal" class="nav-link text-white" href="#">Contact You Might Need</a>
+                        <a data-bs-target="#DisplayContactModal" data-bs-toggle="modal" class="nav-link text-white" href="#">Contacts</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a  class="nav-link text-white" href="src/views/userViewAfterLogin.php">Municipalities</a>
+                    </li>
+
+
                 </ul>
-                <div>
-                    <a data-bs-target="#LoginModal" data-bs-toggle="modal" href="#" class="btn btn-light me-2">Login</a>
-                    <a data-bs-toggle="modal" data-bs-target="#RegisterModal" href="#" class="btn btn-outline-light">Sign Up</a>
-                </div>
             </div>
         </div>
 
@@ -136,32 +162,15 @@ if (isset($_SESSION['userId'])) {
     <!-- Hero Page -->
     <section id="heroPage" class="hero">
         <div class="text-light text-center">
-            <h2>Plan Your Trip With <span style="color: #0D5C75 ">TourHab</span></h2>
-            <p class="mt-3">Discover amazing places at exclusive deals. Join us to explore the world with ease and comfort.</p>
-        </div>
-    </section>
-
-    <!-- Top 5 Place -->
-    <h2 style="color: #0D5C75 " class="text-center my-4">Top Places</h2>
-    <section id="TopTreeContainer" class="container-fluid row justify-content-center align-items-center gap-3 p-5">
-    </section>
-
-    <!-- Review List-->
-    <section style="background-color: #0D5C75; height: 50vh; " class="container-fluid d-flex flex-column justify-content-center align-items-center">
-        <h2 style="color: #ffffff" class="text-center p-5">REVIEWS</h2>
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div id="reviewContainer" class="swiper-wrapper">
-
-            </div>
-            <div class="swiper-pagination"></div>
+            <h2 class="text-overlay">PLAN YOUR TRIP WITH <br> <span class=" fs-1">INFORMATION HUB</span></h2>
+            <p class="p-3">Discover amazing places at exclusive deals. Join us to explore the world with ease and comfort.</p>
         </div>
     </section>
 
     <!-- About Us Section-->
     <section id="About_Page" style="min-height: 50vh; " class="container-fluid  d-lg-flex justify-content-between align-items-center  p-5">
         <div>
-            <div class="col-lg-10">
+            <div data-aos="fade-right"  class="col-lg-10">
                 <h5 style="color: #0D5C75" class="card-title">Dress/What to Bring (For Tourist)</h5>
                 <div class="card-body">
                     <p class="card-text text-muted">
@@ -173,7 +182,7 @@ if (isset($_SESSION['userId'])) {
             </div>
             <br>
 
-            <div class=" col-lg-10">
+            <div data-aos="fade-right" data-aos-duration="2000" class=" col-lg-10">
                 <h5 style="color: #0D5C75" class="card-title">Geography</h5>
                 <div class="card-body">
                     <p class="card-text text-muted">
@@ -188,7 +197,7 @@ if (isset($_SESSION['userId'])) {
                 </div>
             </div>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left"  data-aos-duration="2000" >
             <img class="img-thumbnail border-0 " src="./assets/img/lighthouse.jpg" alt="img">
         </picture>
     </section>
@@ -207,7 +216,7 @@ if (isset($_SESSION['userId'])) {
         <div class="container-fluid p-3 row justify-content-center align-items-center gap-3">
 
             <!--  card start-->
-            <div class="card col-lg-3">
+            <div data-aos="fade-right" class="card col-lg-3">
             <div class="text-center">
                <svg  width="100" height="100"  enable-background="new 0 0 64 64" id="Layer_1"  version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" 
                xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="#0D5C75" points="56,22 56,54.5 40,59.5 24,54.5 8,59.5 8,26.5 24,21.8 "/><polygon fill="#B7B7B7" points="24,21.8 24,54.5 40,59.5 40,21.9 "/><path d="M40,40.1c0,0,13.6-9.2,13.6-22.5C53.6,10.1,47.5,4,40,4s-13.6,6.1-13.6,13.6c0,10,6.9,16.7,10.9,20.2  L40,40.1z" fill="#FFD766"/><path d="M44.7,11.3c-0.6,0.4-1.6,1.1-2.7,2L33.4,12l-0.6,1.5l6.2,2.2c-1.8,1.5-4,3.3-4,3.3l-1.9-1.4l-0.9,0.8  l2.7,2.7c0,0,10.4-7,12.1-8.3C48.7,11.7,46.6,10.1,44.7,11.3z" fill="#4B687F"/><path d="  M44.7,11.3c-0.6,0.4-1.6,1.1-2.7,2L33.4,12l-0.6,1.5l6.2,2.2c-1.8,1.5-4,3.3-4,3.3l-1.9-1.4l-0.9,0.8l2.7,2.7c0,0,10.4-7,12.1-8.3  C48.7,11.7,46.6,10.1,44.7,11.3z" fill="none" stroke="#2C3E50" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#2C3E50" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="33" x2="43" y1="24" y2="24"/><line fill="none" stroke="#2C3E50" stroke-dasharray="0,3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="24" x2="24" y1="26" y2="51"/><line fill="none" stroke="#2C3E50" stroke-dasharray="0,3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="40" x2="40" y1="56" y2="42"/><polyline fill="none" points="  56,22 56,54.5 40,59.5 24,54.5 8,59.5 8,26.5 24,21.8 " stroke="#2C3E50" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M24,22" fill="none" stroke="#2C3E50" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M40,40.1c0,0,13.6-9.2,13.6-22.5C53.6,10.1,47.5,4,40,4s-13.6,6.1-13.6,13.6c0,10,6.9,16.7,10.9,20.2L40,40.1z" fill="none" stroke="#2C3E50" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
@@ -231,7 +240,7 @@ if (isset($_SESSION['userId'])) {
             <!--  card  end-->
 
             <!--  card start-->
-            <div class="card col-lg-3">
+            <div data-aos="fade-up" data-aos-offset="300"  class="card col-lg-3">
                 <div class="text-center">
                  <svg width="100" height="100" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Day 23" id="65560156-bb18-44a0-80a1-df2ee73e9291"><rect data-name="&lt;Path&gt;" fill="#ab3535" height="5" id="3ca8cacb-1512-4e4f-b9cc-62d2141793e0" width="4" x="12" y="36"/><polygon data-name="&lt;Path&gt;" fill="#4fab35" id="a277caf0-9ea7-4510-89de-4d4e612a2fc7" points="40 46 40 47 29 47 29 43 40 43 40 46"/><polygon data-name="&lt;Path&gt;" fill="#799980" id="0c7a803c-a766-4599-a127-7e7028d2169b" points="29 41 29 47 8 47 10 41 29 41"/><polygon data-name="&lt;Path&gt;" fill="#87ab8f" id="4913c888-0f43-47ac-8fed-05abdabf4279" points="26 41 26 47 8 47 10 41 26 41"/><path d="M40,33v5H19c2.12-1.77,4-3.52,5.77-5.23L25,33Z" data-name="&lt;Path&gt;" fill="#71a3de" id="269c492a-2393-473b-907a-08bb4e9f9f07"/><path d="M40,28v5H25l-.23-.23c1.8-1.76,3.39-3.48,4.81-5.12L30,28Z" data-name="&lt;Path&gt;" fill="#8171de" id="4d04966b-610c-4ce7-8537-db01e2669631"/><path d="M40,11V23H34l-.47-.34C38.53,15.74,40,11,40,11Z" data-name="&lt;Path&gt;" fill="#8171de" id="b9c44f9e-eb86-4bcf-89bb-60d667659742"/><path d="M40,23v5H30l-.42-.35c1.52-1.76,2.82-3.43,4-5L34,23Z" data-name="&lt;Path&gt;" fill="#71a3de" id="62c2d1c0-eca4-4701-99e4-1de0711b3975"/><polygon data-name="&lt;Path&gt;" fill="#5197e8" id="62f66bd6-2b1b-4fde-911b-97d867722d98" points="57 38 41 44 40 43 40 10 57 38"/><polygon data-name="&lt;Path&gt;" fill="#71a3de" id="2e5a9874-c0e8-488c-a78d-3a0ca47bd5aa" points="55 35 40 40.63 40 10.29 55 35"/><circle cx="16.5" cy="50.5" data-name="&lt;Path&gt;" fill="#001c63" id="442a95f0-5597-42fc-b6cd-2111c5cad8ed" r="1.5"/><path d="M13,50.5A1.5,1.5,0,1,0,11.5,52,1.5,1.5,0,0,0,13,50.5ZM8,47H59l-7,8H7L5,47Zm8.5,5A1.5,1.5,0,1,0,15,50.5,1.5,1.5,0,0,0,16.5,52Z" data-name="&lt;Compound Path&gt;" fill="#35a9ab" id="9d9f3440-4558-4629-adb2-ba97be6cefe9"/><circle cx="11.5" cy="50.5" data-name="&lt;Path&gt;" fill="#001c63" id="df21d2fc-171a-4fb8-a36d-d58780cdf221" r="1.5"/><polyline data-name="&lt;Path&gt;" fill="none" id="e94752b6-95ea-42e8-acdd-fb86b248fd50" points="40 47 59 47 52 55 7 55 5 47 8 47" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><polyline data-name="&lt;Path&gt;" fill="none" id="014f8140-4ebc-4452-bff8-e46dfc0f535e" points="40 10 40 11 40 23 40 28 40 33 40 38 40 43" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><polyline data-name="&lt;Path&gt;" fill="none" id="56a9845b-bfbf-4937-b193-1a5d05134fe0" points="41 44 57 38 40 10" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M40,11s-1.47,4.74-6.47,11.66c-1.13,1.56-2.43,3.23-4,5s-3,3.36-4.81,5.12S21.12,36.23,19,38H40" data-name="&lt;Path&gt;" fill="none" id="457fd5b6-2ad3-4d7f-a877-851eab760141" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><polygon data-name="&lt;Path&gt;" fill="#99de8a" id="cf279158-eb3d-4d86-aba7-5948a638b50d" points="40 5 40 4 48 4 46.55 7 48 10 40 10 40 5"/><polygon data-name="&lt;Path&gt;" fill="none" id="1849c745-a381-47a7-b646-df22d62aea9c" points="40 5 40 4 48 4 46.55 7 48 10 40 10 40 5" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><polyline data-name="&lt;Path&gt;" fill="none" id="e3e4909f-ae9c-424a-883f-208cf9f3c1de" points="16 41 29 41 29 43" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><polyline data-name="&lt;Path&gt;" fill="none" id="a6be86c7-662b-4d39-87ef-9604bdbadca9" points="29 47 8 47 10 41 12 41" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><polygon data-name="&lt;Path&gt;" fill="none" id="20466da3-0e60-4209-b17c-5048756e8ea4" points="29 47 40 47 40 46 40 43 29 43 29 47" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><rect data-name="&lt;Path&gt;" fill="none" height="5" id="1f7c4c59-06f0-4a02-a219-78ec7c4a8672" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="4" x="12" y="36"/><line data-name="&lt;Path&gt;" fill="none" id="14d81c41-ed26-4af5-9faf-c9277744b44f" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="14" x2="18" y1="44" y2="44"/><line data-name="&lt;Path&gt;" fill="none" id="04294ee8-8686-40ac-90e6-d38ee3e94ed2" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="25" x2="40" y1="33" y2="33"/><line data-name="&lt;Path&gt;" fill="none" id="eed5d46c-15bf-458e-a798-4ebc8e4a98a1" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="30" x2="40" y1="28" y2="28"/><line data-name="&lt;Path&gt;" fill="none" id="4d572ca5-46ea-43a2-a64f-b41a66b8e96e" stroke="#001c63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="34" x2="40" y1="23" y2="23"/><line data-name="&lt;Path&gt;" fill="none" id="d08ba41a-373e-4fe0-9cd2-c6a2060c83ce" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="51" x2="43" y1="50" y2="50"/><line data-name="&lt;Path&gt;" fill="#0D5C75" id="99be269a-af17-4491-8d9a-c0f8170225b5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="40" x2="40" y1="50" y2="50"/></g></svg>
                     <h5 style="color:#0D5C75" class="text-center">TRAVELING BY SEA</h5>
@@ -268,7 +277,7 @@ if (isset($_SESSION['userId'])) {
 
 
             <!--  card start-->
-            <div class="card col-lg-3">
+            <div data-aos="fade-left"  class="card col-lg-3">
                 <div class="text-center">
                    <svg  width="100" height="100"  id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
                          xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -300,9 +309,21 @@ if (isset($_SESSION['userId'])) {
             <h1 style="font-family: Roboto, sans-serif; color:#0D5C75" class="fw-bold text-center">
                 THE MAP OF NORTHERN SAMAR
             </h1>
-            <img src="./assets/img/mapa.png" alt="map">
+            <img data-aos="fade-up" data-aos-duration="3000" src="./assets/img/mapa.png" alt="map">
         </div>
     </div>
+
+    <!-- Review List-->
+    <section style="height: 100vh; " class="container-fluid hero  d-flex flex-column justify-content-center align-items-center">
+        <h3 class="text-center text-overlay p-5">REVIEWS</h3>
+        <!-- Swiper -->
+        <div class="swiper   mySwiper">
+            <div id="reviewContainer" class="swiper-wrapper d-flex justify-content-center align-items-center p-5">
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
     <footer id="footer" style="background-color: #0D5C75" class="text-light py-4">
         <div class="container">
@@ -320,7 +341,6 @@ if (isset($_SESSION['userId'])) {
                         <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Reviews</a></li>
-
                     </ul>
                 </div>
                 <!-- Contact Section -->
@@ -347,105 +367,9 @@ if (isset($_SESSION['userId'])) {
         </div>
     </footer>
 
-    <!-- Modal for Register -->
-    <form class="modal fade" id="RegisterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" ariimg-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div style="background-color: #0D5C75" class="modal-header text-light">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign Up</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-floating mb-3">
-                        <input type="text" name="FirstName" class="form-control border-3" id="FirstName" placeholder="First Name">
-                        <label for="FirstName">First Name</label>
-                        <div class="invalid-feedback" id="FirstName_msg"></div>
-                    </div>
 
-                    <div class="form-floating mb-3">
-                        <input type="text" name="LastName" class="form-control border-3" id="LastName" placeholder="Last Name">
-                        <label for="LastName">Last Name</label>
-                        <div class="invalid-feedback" id="LastName_msg"></div>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input type="text" name="Username" class="form-control " id="Username" placeholder="Username">
-                        <label for="Username">Username</label>
-                        <div class="invalid-feedback" id="Username_msg"></div>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input autocomplete="password" name="password" type="password" class="form-control  " id="password" placeholder="Password">
-                        <label for="password">Password</label>
-                        <div class="invalid-feedback" id="password_msg"></div>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
-                        <label for="email">Email address</label>
-                        <div class="invalid-feedback" id="email_msg"></div>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input name="Address" type="text" class="form-control border-3 " id="Address" placeholder="Address">
-                        <label for="Address">Address</label>
-                        <div class="invalid-feedback" id="Address_msg"></div>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input type="number" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="phoneNumber">
-                        <label for="phoneNumber">PhoneNumber</label>
-                        <div class="invalid-feedback" id="phoneNumber_msg"></div>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input name="contactPerson" type="number" class="form-control" id="contactPerson" placeholder="ContactPerson">
-                        <label for="contactPerson">Contact Person</label>
-                        <div class="invalid-feedback" id="contactPerson_msg"></div>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button style="background-color: #0D5C75" id="btn_register" type="submit" class="btn text-light">Register</button>
-                </div>
-            </div>
-        </div>
-    </form>
-
-
-    <!-- Modal for login -->
-    <form class="modal fade" id="LoginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-3"  style="color: #0D5C75" id="messageDis">Welcome Back</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-floating mb-3">
-                        <input name="username" type="text" class="form-control" id="username" placeholder="username">
-                        <label for="username">Username</label>
-                        <div class="invalid-feedback" id="username_msg"></div>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input name="Password" autocomplete="password" type="password" class="form-control" id="Password" placeholder="Password">
-                        <label for="Password">Password</label>
-                        <div class="invalid-feedback" id="Password_msg"></div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button style="background-color: #0D5C75" id="btn_login" type="submit" class="btn text-light">Login</button>
-                </div>
-            </div>
-        </div>
-    </form>
 <section>
     <?php
-    include 'includes/modal_where_ToStay.php';
-    include 'includes/modal_where_ToEat.php';
     include 'includes/DisplayContactModal.php';
     ?>
 </section>
@@ -455,8 +379,12 @@ if (isset($_SESSION['userId'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./src/JQUERY/Auth.js"></script>
 </body>
-
 </html>
+<script src="./app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <!-- Initialize Swiper -->
 <script>
     const swiper = new Swiper('.mySwiper', {
@@ -481,115 +409,4 @@ if (isset($_SESSION['userId'])) {
             },
         },
     });
-</script>
-
-<script>
-    $(document).ready(function() {
-        $.ajax({
-            url: 'src/controllers/municipalityController.php',
-            type: 'POST',
-            data: {
-                action: 'topPlaces'
-            },
-            success: function(data) {
-                $('#TopTreeContainer').html(data)
-            }
-        })
-
-        $.ajax({
-            url: 'src/controllers/reviewsController.php',
-            type: 'POST',
-            data: {
-                action: 'showAll'
-            },
-            success: function(data) {
-                $('#reviewContainer').html(data)
-            }
-        })
-
-        $.ajax({
-            url: 'src/controllers/where_to_stayController.php',
-            type: 'POST',
-            data: {
-                action: 'show'
-            },
-            success: function(data) {
-                $('#whereStayList').html(data);
-            }
-        })
-
-   $.ajax({
-            url: 'src/controllers/Contact_AndHotLinesController.php',
-            type: 'POST',
-            data: {
-                action: 'Display'
-            },
-            success: function(data) {
-                $('#listContact').html(data);
-            }
-        })
-
-
-
-        $(document).on('change','#filterSelect',function (e){
-            $.ajax({
-                url: 'src/controllers/where_to_stayController.php',
-                type: 'POST',
-                data: {action: 'filter', municipality: e.target.value},
-                success: function (data){
-                   $('#whereStayList').html(data)
-                }
-            })
-        })
-
-        $.ajax({
-            url: 'src/controllers/where_to_stayController.php',
-            type: 'POST',
-            data: {
-                action: 'showToSelectMunicipality'
-            },
-            success: function(data) {
-               $('#filterSelect').html(data)
-            }
-        })
-
-         $.ajax({
-            url: 'src/controllers/where_to_eatController.php',
-            type: 'POST',
-            data: {
-                action: 'showCategoryAndMunicipality'
-            },
-            success: function(data) {
-             $('#container_Selects').html(data)
-            }
-        })
-
-        $.ajax({
-            url: 'src/controllers/where_to_eatController.php',
-            type: 'POST',
-            data: {
-                action: 'showAll'
-            },
-            success: function(data) {
-                $('#whereEatList').html(data)
-            }
-        })
-
-        $(document).on('submit','#container_Selects',function (event){
-            event.preventDefault()
-            const DataForm = new FormData (this)
-            DataForm.append('action','Filter')
-            $.ajax({
-                url: 'src/controllers/where_to_eatController.php',
-                type: 'POST',
-                data: DataForm,
-                contentType: false,
-                processData: false,
-                success: function (data){
-                   $('#whereEatList').html(data)
-                }
-            })
-        })
-
-    })
 </script>

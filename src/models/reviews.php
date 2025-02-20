@@ -7,16 +7,16 @@ use Exception;
 require_once '../../config/Connection.php';
 class reviews extends \Connection
 {
-  public  function store($message,$userId):void
+  public  function store($message,$attraction,$name):void
   {
       try {
           $conn = $this->Connect();
-          $query = "INSERT INTO tb_reviews(message, userId) VALUES (?,?)";
+          $query = "INSERT INTO tb_reviews(message, attraction,name) VALUES (?,?,?)";
           $stmt = $conn->prepare($query);
-          $stmt->bind_param('si',$message,$userId);
+          $stmt->bind_param('sss',$message,$attraction,$name);
 
           if ($stmt->execute()){
-              echo json_encode(['success' => true, 'message' => 'Successfully Submitting Your Review']);
+              echo json_encode(['success' => true, 'message' => "Thank you $name for  Submitting Your Review!"]);
           }else{
               echo json_encode(['success' => false, 'message' => 'Error'.$stmt->error]);
           }
@@ -29,10 +29,9 @@ class reviews extends \Connection
   {
       try {
           $conn = $this->Connect();
-          $result = $conn->query("
-          select users.firstName , users.lastName, tb_reviews.message
-            from users
-            INNER JOIN tb_reviews ON  tb_reviews.userId =  users.id;
+          $result = $conn->query(
+              "
+                SELECT * FROM tb_reviews
           ");
 
           if ($result->num_rows > 0){
