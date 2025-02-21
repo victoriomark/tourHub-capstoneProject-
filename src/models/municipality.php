@@ -11,7 +11,7 @@ class municipality extends \Connection
         $conn = $this->Connect();
         $query = "INSERT INTO municipality(municipalityName, image, description)values (?,?,?)";
         $stmt = $conn->prepare($query);
-        $stmt->bind_param('ssss',$municipalityName,$image ,$description);
+        $stmt->bind_param('sss',$municipalityName,$image ,$description);
 
         if ($stmt->execute()){
             echo json_encode(['success' => true, 'message' => 'Successfully Created New Municipality']);
